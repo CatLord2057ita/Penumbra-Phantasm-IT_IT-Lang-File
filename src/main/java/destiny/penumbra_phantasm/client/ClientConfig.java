@@ -27,8 +27,18 @@ public class ClientConfig {
 
     private static final ForgeConfigSpec.BooleanValue BIOME_MUSIC_LOOP = BUILDER
             .comment("Is biome music played on repeat?")
-            .comment("Default: false")
-            .define("biome_music_loop", false);
+            .comment("Default: true")
+            .define("biome_music_loop", true);
+
+    private static final ForgeConfigSpec.IntValue BIOME_MUSIC_MIN_DELAY = BUILDER
+            .comment("Min delay of biome music in seconds, should be less than max")
+            .comment("Default: 60 (1 minute)")
+            .defineInRange("biome_music_min_delay", 60, 0, 60 * 60);
+
+    private static final ForgeConfigSpec.IntValue BIOME_MUSIC_MAX_DELAY = BUILDER
+            .comment("Max delay of biome music in seconds, should be more than min")
+            .comment("Default: 900 (15 minutes)")
+            .defineInRange("biome_music_max_delay", 15 * 60, 0, 60 * 60);
 
     public static final ForgeConfigSpec SPEC = BUILDER.build();
 
@@ -36,6 +46,8 @@ public class ClientConfig {
     public static boolean always_show_location_titles;
     public static double fountainLodDistance;
     public static boolean biomeMusicLoop;
+    public static int biomeMusicMinDelay;
+    public static int biomeMusicMaxDelay;
 
     @SubscribeEvent
     static void onLoad(final ModConfigEvent event) {
@@ -46,5 +58,7 @@ public class ClientConfig {
         always_show_location_titles = ALWAYS_SHOW_LOCATION_TITLES.get();
         fountainLodDistance = FOUNTAIN_LOD_DISTANCE.get();
         biomeMusicLoop = BIOME_MUSIC_LOOP.get();
+        biomeMusicMinDelay = BIOME_MUSIC_MIN_DELAY.get();
+        biomeMusicMaxDelay = BIOME_MUSIC_MAX_DELAY.get();
     }
 }

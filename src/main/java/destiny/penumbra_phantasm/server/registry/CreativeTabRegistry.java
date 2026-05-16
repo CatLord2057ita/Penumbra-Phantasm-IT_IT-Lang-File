@@ -251,7 +251,6 @@ public class CreativeTabRegistry {
                 output.accept(BlockRegistry.CLIFFROCK_EYE.get());
                 output.accept(BlockRegistry.WEEPING_EYE.get());
                 output.accept(BlockRegistry.LEAKING_ICHOR.get());
-                output.accept(ItemRegistry.ICHOR_PUDDLE.get());
                 output.accept(BlockRegistry.ICHOR_BLOCK.get());
                 output.accept(ItemRegistry.ICHOR_TORCH.get());
                 output.accept(BlockRegistry.ICHOR_LANTERN.get());

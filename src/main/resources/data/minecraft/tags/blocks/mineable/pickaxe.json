@@ -165,6 +165,10 @@
     "penumbra_phantasm:red_check",
     "penumbra_phantasm:yellow_check",
     "penumbra_phantasm:dark_marble_ivory_ore",
-    "penumbra_phantasm:scarlet_marble_ivory_ore"
+    "penumbra_phantasm:scarlet_marble_ivory_ore",
+    "penumbra_phantasm:cliffrock_eye",
+    "penumbra_phantasm:weeping_eye",
+    "penumbra_phantasm:leaking_ichor",
+    "penumbra_phantasm:ichor_lantern"
   ]
 }

@@ -17,6 +17,7 @@
   "item.penumbra_phantasm.item_music_medium_the_holy.desc": "Toby Fox - THE HOLY",
 
   "item.penumbra_phantasm.dark_candy_stick": "Dark Candy Stick",
+  "item.penumbra_phantasm.ichor": "Ichor",
 
   "item.penumbra_phantasm.dark_candy_sword": "Dark Candy Sword",
   "item.penumbra_phantasm.dark_candy_pickaxe": "Dark Candy Pickaxe",
@@ -168,6 +169,15 @@
   "block.penumbra_phantasm.cliffrock_path": "Cliffrock Path",
   "block.penumbra_phantasm.cliffrock_pillar": "Cliffrock Pillar",
   "block.penumbra_phantasm.chiseled_cliffrock": "Chiseled Cliffrock",
+
+  "block.penumbra_phantasm.cliffrock_eye": "Cliffrock Eye",
+  "block.penumbra_phantasm.weeping_eye": "Weeping Eye",
+  "block.penumbra_phantasm.leaking_ichor": "Leaking Ichor",
+  "block.penumbra_phantasm.ichor_puddle": "Ichor",
+  "block.penumbra_phantasm.ichor_block": "Ichor Block",
+  "block.penumbra_phantasm.ichor_torch": "Ichor Torch",
+  "block.penumbra_phantasm.ichor_wall_torch": "Ichor Wall Torch",
+  "block.penumbra_phantasm.ichor_lantern": "Ichor Lantern",
 
   "block.penumbra_phantasm.polished_cliffrock": "Polished Cliffrock",
   "block.penumbra_phantasm.polished_cliffrock_stairs": "Polished Cliffrock Stairs",

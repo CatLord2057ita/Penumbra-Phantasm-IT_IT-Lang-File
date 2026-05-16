@@ -57,8 +57,6 @@ public class ItemRegistry {
 
     public static final RegistryObject<Item> DARK_CANDY_STICK = ITEMS.register("dark_candy_stick",
             () -> new Item(new Item.Properties()));
-    public static final RegistryObject<Item> ICHOR = ITEMS.register("ichor",
-            () -> new Item(new Item.Properties()));
     public static final RegistryObject<Item> IVORY = ITEMS.register("ivory",
             () -> new Item(new Item.Properties()));
     public static final RegistryObject<Item> RAW_ROSEGOLD = ITEMS.register("raw_rosegold",
@@ -122,7 +120,7 @@ public class ItemRegistry {
             () -> new ScalableHorizontalPlaneBlockItem(BlockRegistry.FALLEN_DARK_CANDY_LEAVES.get(), new Item.Properties()));
     public static final RegistryObject<Item> FALLEN_SCARLET_LEAVES = ITEMS.register("fallen_scarlet_leaves",
             () -> new ScalableHorizontalPlaneBlockItem(BlockRegistry.FALLEN_SCARLET_LEAVES.get(), new Item.Properties()));
-    public static final RegistryObject<Item> ICHOR_PUDDLE = ITEMS.register("ichor_puddle",
+    public static final RegistryObject<Item> ICHOR = ITEMS.register("ichor",
             () -> new ScalableHorizontalPlaneBlockItem(BlockRegistry.ICHOR_PUDDLE.get(), new Item.Properties()));
     public static final RegistryObject<Item> ICHOR_TORCH = ITEMS.register("ichor_torch",
             () -> new StandingAndWallBlockItem(BlockRegistry.ICHOR_TORCH.get(), BlockRegistry.ICHOR_WALL_TORCH.get(), new Item.Properties(), Direction.DOWN));

@@ -41,6 +41,9 @@
     "penumbra_phantasm:rosegold_wall",
     "penumbra_phantasm:rosegold_button",
     "penumbra_phantasm:rosegold_pressure_plate",
-    "penumbra_phantasm:umbrastone_rosegold_ore"
+    "penumbra_phantasm:umbrastone_rosegold_ore",
+    "penumbra_phantasm:cliffrock_eye",
+    "penumbra_phantasm:weeping_eye",
+    "penumbra_phantasm:leaking_ichor"
   ]
 }

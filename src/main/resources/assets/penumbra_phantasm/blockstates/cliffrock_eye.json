@@ -14,14 +14,6 @@
     "facing=west": {
       "model": "penumbra_phantasm:block/cliffrock_eye",
       "y": 270
-    },
-    "facing=up": {
-      "model": "penumbra_phantasm:block/cliffrock_eye",
-      "x": 270
-    },
-    "facing=down": {
-      "model": "penumbra_phantasm:block/cliffrock_eye",
-      "x": 90
     }
   }
 }

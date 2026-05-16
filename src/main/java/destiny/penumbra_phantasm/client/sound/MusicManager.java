@@ -62,11 +62,11 @@ public class MusicManager {
             initialized = true;
             biomeMusicMap.put(
                     new ResourceLocation(PenumbraPhantasm.MODID, "field_of_hopes_and_dreams"),
-                    new BiomeMusic(() -> SoundRegistry.FIELD_OF_HOPES_AND_DREAMS.get(), ClientConfig.biomeMusicLoop, 60 * 20, 15 * 60 * 20)
+                    new BiomeMusic(() -> SoundRegistry.FIELD_OF_HOPES_AND_DREAMS.get(), ClientConfig.biomeMusicLoop, ClientConfig.biomeMusicMinDelay * 20, ClientConfig.biomeMusicMaxDelay * 20)
             );
             biomeMusicMap.put(
                     new ResourceLocation(PenumbraPhantasm.MODID, "scarlet_forest"),
-                    new BiomeMusic(() -> SoundRegistry.EVERLASTING_AUTUMN.get(), ClientConfig.biomeMusicLoop, 60 * 20, 15 * 60 * 20)
+                    new BiomeMusic(() -> SoundRegistry.EVERLASTING_AUTUMN.get(), ClientConfig.biomeMusicLoop, ClientConfig.biomeMusicMinDelay * 20, ClientConfig.biomeMusicMaxDelay * 20)
             );
 /*            biomeMusicMap.put(
                     new ResourceLocation(PenumbraPhantasm.MODID, "great_board"),

@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "#": {
+      "item": "penumbra_phantasm:ichor_torch"
+    },
+    "X": {
+      "item": "penumbra_phantasm:ivory"
+    }
+  },
+  "pattern": [
+    " X ",
+    "X#X",
+    " X "
+  ],
+  "result": {
+    "item": "penumbra_phantasm:ichor_lantern"
+  },
+  "show_notification": true
+}
