@@ -1,18 +1,18 @@
 package destiny.penumbra_phantasm.client.render.blockentity;
 
 import com.mojang.blaze3d.vertex.PoseStack;
-import com.mojang.blaze3d.vertex.VertexConsumer;
 import destiny.penumbra_phantasm.server.block.entity.DustBlockEntity;
 import net.minecraft.client.Minecraft;
 import net.minecraft.client.renderer.MultiBufferSource;
-import net.minecraft.client.renderer.RenderType;
 import net.minecraft.client.renderer.blockentity.BlockEntityRenderer;
 import net.minecraft.client.renderer.blockentity.BlockEntityRendererProvider;
 import net.minecraft.client.resources.model.BakedModel;
 import net.minecraft.core.Direction;
+import net.minecraft.util.RandomSource;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.level.block.state.properties.BlockStateProperties;
+import net.minecraftforge.client.model.data.ModelData;
 
 import static destiny.penumbra_phantasm.server.block.DustBlock.ANIMATION_OFFSET;
 
@@ -55,27 +55,21 @@ public class DustBlockEntityRenderer implements BlockEntityRenderer<DustBlockEnt
                 poseStack.pushPose();
                 poseStack.translate(diagX * horizDisp, vertDisp, diagZ * horizDisp);
 
-                RenderType renderType = RenderType.solid();
-                VertexConsumer vertexConsumer = bufferSource.getBuffer(renderType);
                 BakedModel model = Minecraft.getInstance().getBlockRenderer().getBlockModel(state);
+                for (net.minecraft.client.renderer.RenderType rt : model.getRenderTypes(state, RandomSource.create(42), ModelData.EMPTY)) {
+                    Minecraft.getInstance().getBlockRenderer().renderBatched(state, blockEntity.getBlockPos(), level, poseStack,
+                            bufferSource.getBuffer(rt), true, level.getRandom(), ModelData.EMPTY, rt);
+                }
 
-                Minecraft.getInstance().getBlockRenderer().getModelRenderer().renderModel(
-                        poseStack.last(), vertexConsumer, state, model,
-                        1.0f, 1.0f, 1.0f, packedLight, packedOverlay
-                );
                 poseStack.popPose();
                 return;
             }
         }
 
-        // offset == 0 or missing properties – render stationary
-        RenderType renderType = RenderType.solid();
-        VertexConsumer vertexConsumer = bufferSource.getBuffer(renderType);
         BakedModel model = Minecraft.getInstance().getBlockRenderer().getBlockModel(state);
-
-        Minecraft.getInstance().getBlockRenderer().getModelRenderer().renderModel(
-                poseStack.last(), vertexConsumer, state, model,
-                1.0f, 1.0f, 1.0f, packedLight, packedOverlay
-        );
+        for (net.minecraft.client.renderer.RenderType rt : model.getRenderTypes(state, RandomSource.create(42), ModelData.EMPTY)) {
+            Minecraft.getInstance().getBlockRenderer().renderBatched(state, blockEntity.getBlockPos(), level, poseStack,
+                    bufferSource.getBuffer(rt), true, level.getRandom(), ModelData.EMPTY, rt);
+        }
     }
 }
