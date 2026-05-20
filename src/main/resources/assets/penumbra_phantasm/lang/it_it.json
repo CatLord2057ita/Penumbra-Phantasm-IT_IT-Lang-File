@@ -278,7 +278,7 @@
   "block.penumbra_phantasm.scarlet_marble_pawn": "Pedina di marmo scarlatto",
   "block.penumbra_phantasm.scarlet_marble_rook": "Torre di marmo scarlatto",
   "block.penumbra_phantasm.scarlet_marble_knight": "Cavallo di marmo scarlatto",
-  "block.penumbra_phantasm.scarlet_marble_bishop": Alfiere di marmo scarlatto",
+  "block.penumbra_phantasm.scarlet_marble_bishop": "Alfiere di marmo scarlatto",
   "block.penumbra_phantasm.scarlet_marble_queen": "Regina di marmo scarlatto",
   "block.penumbra_phantasm.scarlet_marble_king": "Re di marmo scarlatto",
 
@@ -405,14 +405,14 @@
   "tooltip.penumbra_phantasm.soul_hearth.soul_type.7": "JUSTIZIA",
   "tooltip.penumbra_phantasm.soul_hearth.determination": "DETERMINAZIONE: ",
   "tooltip.penumbra_phantasm.soul_hearth.trust_level": "FIDUCIA: ",
-  "tooltip.penumbra_phantasm.soul_hearth.not_owner": "L'ANIMA QUA DENTRO TI RIFIUTA.",
+  "tooltip.penumbra_phantasm.soul_hearth.not_owner": "L'ANIMA CHE RISIEDE DENTRO TI RIFIUTA.",
 
   "gui.penumbra_phantasm.dark_world_inventory_title": "INVENTARIO",
   "gui.penumbra_phantasm.dark_world_inventory_crafting": "CRAFT",
   "gui.penumbra_phantasm.dark_world_inventory_equipped": "EQUIPPED",
 
   "location.penumbra_phantasm.dark_fountain": "Fontana Oscura",
-  "location.penumbra_phantasm.dark_fountain.description": "'Il geyser che crea questa terra...'",
+  "location.penumbra_phantasm.dark_fountain.description": "'Il geyser che forma questa terra...'",
 
   "biome.penumbra_phantasm.field_of_hopes_and_dreams": "Terreno di Speranze e Sogni",
   "biome.penumbra_phantasm.field_of_hopes_and_dreams.description": "'Dove sogno e ombra s'incontrano...'",
